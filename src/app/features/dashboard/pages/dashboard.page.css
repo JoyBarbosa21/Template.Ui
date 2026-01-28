@@ -1,0 +1,12 @@
+.dashboard {
+  padding: 32px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+p {
+  color: #555;
+}

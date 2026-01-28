@@ -10,7 +10,7 @@ Este projeto serve como base escalável para aplicações que exigem login, prot
 
 ## 🚀 Tecnologias Utilizadas
 
-- **Angular (Standalone Components)**
+- **Angular**
 - **TypeScript**
 - **Angular Material**
 - **RxJS**

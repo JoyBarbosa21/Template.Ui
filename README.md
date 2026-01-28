@@ -1,59 +1,60 @@
-# TemplateUi
+# 🔐 Angular UI – Auth + JWT (Standalone)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.1.
+![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
 
-## Development server
+Projeto de interface (UI) desenvolvido em **Angular**, com foco em **arquitetura limpa**, **autenticação JWT automática**, uso de **HttpInterceptor**, **Guards** e **Angular Material**.
 
-To start a local development server, run:
+Este projeto serve como base escalável para aplicações que exigem login, proteção de rotas e comunicação segura com API.
 
-```bash
-ng serve
-```
+---
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## 🚀 Tecnologias Utilizadas
 
-## Code scaffolding
+- **Angular (Standalone Components)**
+- **TypeScript**
+- **Angular Material**
+- **RxJS**
+- **JWT (JSON Web Token)**
+- **HttpInterceptor**
+- **Route Guards**
+- **Reactive Forms**
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+---
 
-```bash
-ng generate component component-name
-```
+## 📁 Estrutura de Pastas
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+```text
+app/
+ ├─ core/
+ │   ├─ api/
+ │   │   └─ api.service.ts
+ │   ├─ auth/
+ │   │   ├─ auth-api.service.ts
+ │   │   └─ token.service.ts
+ │   ├─ guards/
+ │   │   └─ auth.guard.ts
+ │   ├─ interceptors/
+ │   │   └─ auth.interceptor.ts
+ │
+ ├─ features/
+ │   ├─ auth/
+ │   │   ├─ pages/
+ │   │   │   ├─ login/
+ │   │   │   │   ├─ login.page.ts
+ │   │   │   │   └─ login.page.html
+ │   │   │   ├─ register.page.ts
+ │   │   │   └─ auth.styles.css
+ │   │   ├─ services/
+ │   │   │   └─ auth.service.ts
+ │   │   └─ auth.routes.ts
+ │
+ ├─ shared/
+ │   └─ models/
+ │       ├─ auth-response.ts
+ │       └─ login.dto.ts
+ │
+ ├─ app.config.ts
+ ├─ app.routes.ts
+ ├─ app.ts
+ ├─ app.html
+ └─ app.css
